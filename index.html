@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img class="cafe_logo" src="cafe_logo.png" alt="Cafe Logo">
+  </header>
+  <section class="food-items">
+    <h2>Best Sellers</h2>
+    <div class="food-gallery">
+      <img src="coffee.jpg" alt="Coffee Beans">
+      <br>
+      <img src="pastry.jpg" alt="Pastry">
+      <br>
+      <img src="doughnuts.jpg" alt="Doughnuts">
+      <br>
+      <img src="waffles.jpg" alt="Waffles">
+      <br>
+      <img src="muffins.jpg" alt="Muffins">
+    </div>
+  </section>
+  <section class="menu">
+    <h2>Menu</h2>
+    <ul>
+      <li>Hot Coffee - $3.99</li>
+      <li>Cold Coffee - $4.49</li>
+      <li>Black Coffee - $2.99</li>
+      <li>Pastries - $2.49</li>
+      <li>Muffins - $1.99</li>
+      <li>Doughnuts - $1.49</li>
+      <li>Waffles - $4.99</li>
+      <li>Sandwiches - $6.99</li>
+      <li>Burgers - $7.99</li>
+      <li>Pizzas - $9.99</li>
+      <li>Pastas - $8.99</li>
+    </ul>
+  </section>
+  <button onclick="callWaiter()">Call for a Waiter</button>
+  <section class="register">
+    <h2>Register now for Exclusive Discounts on your next order !!! </h2>
+    <form id="registerForm" action="Customer.php" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="mobile_number" placeholder="Your Mobile Number" required>
+        <button type="submit">Register</button>
+      </form>
+      <div class="container">
+        <div id="thankYouNote" style="display: none;">
+            <p>Thank you for registering !</p>
+        </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
